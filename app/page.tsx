@@ -21,7 +21,7 @@ export default function Home() {
  useEffect(()=>{document.documentElement.lang=lang;localStorage.setItem("lr_language",lang);},[lang]);
  useEffect(()=>{if(!notice)return;const timer=setTimeout(()=>setNotice(""),4500);return()=>clearTimeout(timer);},[notice]);
  useEffect(()=>{if(!selected){if(returnFocus.current){(openRef.current??document.querySelector<HTMLButtonElement>(".request-row"))?.focus();returnFocus.current=false;}return;}closeRef.current?.focus();const old=document.body.style.overflow;document.body.style.overflow="hidden";return()=>{document.body.style.overflow=old;};},[selected?.id]);
- function navigate(next:Tab){setTab(next);history.replaceState(null,"",next==="brief"?"/":`/#${next}`);setFailure("");}
+ function navigate(next:Tab){window.scrollTo({top:0,behavior:"instant"});setTab(next);history.replaceState(null,"",next==="brief"?"/":`/#${next}`);setFailure("");}
  async function refresh(){setLoading(true);try{const response=await fetch("/api/requests");if(!response.ok)throw Error();const data=await response.json() as ListResponse;setRequests(data.requests);setFailure("");}catch{setFailure("unavailable");}finally{setLoading(false);}}
  function change(field:keyof Brief,value:string){setBrief(prev=>({...prev,[field]:value}));if(errors[field])setErrors(prev=>({...prev,[field]:undefined}));}
  function useSample(){setBrief(sample(lang));setErrors({});setSaved(null);setFailure("");key.current=crypto.randomUUID();navigate("brief");}

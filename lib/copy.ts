@@ -2,7 +2,7 @@ export type Language = "en" | "ru";
 export const copy = {
  en: {
   demo: "Independent portfolio demo", new: "New request", queue: "Production queue", case: "The case",
-  eyebrow: "A SMALL TOOL FOR A BETTER HANDOFF", title: "Good work starts\nwith a clear brief.", intro: "A shared starting point for campaign teams and the people building their pages.",
+  eyebrow: "FOR AGENCY & AFFILIATE TEAMS", title: "Campaign briefs.\nReady for production.", intro: "Collect a brief for a landing or comparison page, agree the scope and track the request through delivery. Try the sample to see the full workflow.",
   privacy: "Use fictional details. Your demo workspace lasts 24 hours. No emails or external notifications are sent.", sample: "Try a sample brief", clear: "Clear form",
   formLabel: "01 / THE REQUEST", formTitle: "What are we building?", required: "All fields are required", project: "Project name", projectPlaceholder: "e.g. Atlas partner comparison", market: "Target market", language: "Page language", pageType: "Page type", budget: "Indicative budget", deadline: "Target date",
   objective: "What should this page do?", objectivePlaceholder: "Describe the visitor, the goal and the information the page needs to communicate.", acceptance: "What does ready look like?", acceptancePlaceholder: "List the concrete checks that make this request complete.", create: "Send to production", creating: "Saving request…",
@@ -20,7 +20,7 @@ export const copy = {
  },
  ru: {
   demo: "Собственный демонстрационный проект", new: "Новая заявка", queue: "Очередь задач", case: "О проекте",
-  eyebrow: "НЕБОЛЬШОЙ ИНСТРУМЕНТ ДЛЯ ПОНЯТНЫХ ЗАДАЧ", title: "Хорошая работа\nначинается с брифа.", intro: "Общая точка старта для команды кампании и разработчиков её страниц.",
+  eyebrow: "НЕБОЛЬШОЙ ИНСТРУМЕНТ ДЛЯ ПОНЯТНЫХ ЗАДАЧ", title: "Заявки на страницы.\nПонятная передача.", intro: "Общая точка старта для команды кампании и разработчиков её страниц.",
   privacy: "Используйте вымышленные данные. Демо-пространство действует 24 часа. Письма и внешние уведомления не отправляются.", sample: "Заполнить примером", clear: "Очистить форму",
   formLabel: "01 / ЗАЯВКА", formTitle: "Что будем делать?", required: "Все поля обязательны", project: "Название проекта", projectPlaceholder: "Например: страница сравнения Atlas", market: "Целевой рынок", language: "Язык страницы", pageType: "Тип страницы", budget: "Ориентир по бюджету", deadline: "Желаемая дата",
   objective: "Какую задачу решает страница?", objectivePlaceholder: "Опишите посетителя, его цель и информацию, которую должна донести страница.", acceptance: "Как поймём, что готово?", acceptancePlaceholder: "Перечислите конкретные проверки для приёмки результата.", create: "Передать в работу", creating: "Сохраняем заявку…",
