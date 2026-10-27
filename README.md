@@ -1,6 +1,6 @@
 # Launchroom
 
-[Live demonstration](https://launchroom-dmitry.wivy606.chatgpt.site) · [Case study](CASE-STUDY.md)
+[Live demonstration](https://launchroom-dmitry.wivy606.chatgpt.site) · [Русский разбор](README.ru.md) · [Case study](CASE-STUDY.md)
 
 A manager requests a landing or comparison page. The team gets one structured brief, confirms scope and records delivery. This small tool demonstrates that workflow end to end.
 
@@ -9,6 +9,16 @@ This is an internal production tool for an agency/affiliate team, not a casino o
 A bilingual campaign brief and production queue. Independent portfolio demonstration by Dmitry Mikhailov, made with AI assistance. Fictional data; no NDA materials.
 
 See [the case study](CASE-STUDY.md) for the problem, implemented behavior, evidence and production boundaries.
+
+## Try it in one minute
+
+1. Load the sample brief and submit it.
+2. Open the saved request and move it through scope, work and delivery.
+3. Reload the page to verify persistence, then inspect its history.
+
+![Actual brief form](docs/images/brief-en.png)
+
+![Saved request and lifecycle history](docs/images/request-en.png)
 
 ## Stack
 
